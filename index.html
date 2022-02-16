@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- <link rel="shortcut icon" href="./res/favicon.png"> -->
+
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>System</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/constomm.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--    <script src="js/jquery.min.js"></script>-->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+<div>
+    <nav class="navbar navbar-expand-md navbar-dark" style="border-bottom-width: 2px;border-bottom-style:solid;border-bottom-color: #0067fd ">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" style="color: #0d6efd;" href="#">双重预防机制信息系统</a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- <div class="container"> -->
+<!-- 竖状 导航栏： -->
+<div class="row">
+    <div class="col-2">
+        <table>
+            <thead>
+            <tr>
+                <td>
+                    <div><p></p></div>
+                    <div class="p-3 grayBg" style="border-radius: 9px;">
+<!--                        <svg class="icon col-auto" data-darkreader-inline-fill="" height="20" p-id="1170"-->
+<!--                             version="1.1" viewBox="0 0 1024 1024" width="20" x="1641979430568"-->
+<!--                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <path d="M520.8 90.4l13.2 8.9h0.1c2.2 1.5 58.8 40.6 140.7 75.4 76 28.3 148.4 34.5 160.8 35.4l0.7 0.1c0.8 0.1 1.1 0.1 1.1 0.1h22c8.8 0 17.6 8.9 17.6 13.3v346C872.6 747 635.1 937.8 512 937.8c-127.5-0.1-365-190.9-365-372.7V223.5c0-8.9 8.8-13.3 17.6-13.3h22.1c3.2 0 85-0.7 162.6-35.5 83.5-35.5 140.7-71 140.7-75.4l13.2-8.9c4.4 0 4.4-4.4 8.8-4.4h0.7c4.2 0 8.1 0.2 8.1 4.4z m-0.1 242.7c-10-4.8-21.9-0.6-26.7 9.4l-39.9 82.9-91.1 12.2c-4.5 0.6-8.7 2.7-11.8 6-7.6 8-7.3 20.6 0.6 28.3l66.5 63.5-16.5 90.5c-0.8 4.5-0.1 9.1 2.1 13.1 5.2 9.7 17.4 13.4 27.1 8.1l80.9-43.6 80.9 43.6c4 2.2 8.6 2.9 13.1 2.1 10.9-2 18.1-12.4 16.1-23.3l-16.5-90.5 66.5-63.5c3.3-3.1 5.4-7.3 6-11.8 1.5-10.9-6.2-21-17.1-22.5l-91.1-12.3-39.8-82.8c-1.9-4.1-5.2-7.4-9.3-9.4z"-->
+<!--                                  data-darkreader-inline-fill="" fill="#333333" p-id="1171"-->
+<!--                                  style="&#45;&#45;darkreader-inline-fill:#262a2b;"></path>-->
+<!--                            <path d="M512 971.7c-36.5 0-80.2-12.6-126.4-36.4-43.7-22.5-87.7-54-127.1-90.8-42-39.3-77.3-83.5-102-127.8C127.6 665 113 614 113 565.1V223.5c0-27 22.2-47.3 51.6-47.3h22c2.1 0 78.5-1 148.8-32.5l0.6-0.3c60.6-25.7 102-49.1 120-60.5v-1.7l36.8-24.8h1c5.6-2.9 11.6-4.4 18.1-4.4h0.7c5.2 0 11.2 0.4 17.9 2.9 6.6 2.5 12.1 6.7 16.2 12l6.7 4.5c2.2 1.6 55.6 38.4 133.8 71.7 72.6 26.8 143 32.5 150.8 33.1h21.4c26.5 0 51.6 23 51.6 47.3V570.3c-1.2 47.8-16.7 97.8-46.1 148.6-25.3 43.6-60.8 87.2-102.7 126.1-39.4 36.6-83 67.8-126.1 90.2-45.8 23.9-88.7 36.5-124.1 36.5zM181 244.2v320.9c0 37.2 11.7 77 34.8 118.4 21.4 38.3 52.2 76.8 89.1 111.3 34.9 32.7 73.6 60.4 111.8 80.1 36.1 18.6 69.9 28.9 95.3 28.9 24.2 0 57.1-10.2 92.6-28.7 37.7-19.7 76.2-47.2 111.3-79.7 37-34.4 68.2-72.5 90.1-110.4 23.6-40.7 36-79.6 37-115.8v-325h-6.5l-1-0.1s-0.5 0-1.6-0.1l-0.8-0.1c-14.5-1-90.3-7.7-170.3-37.4l-1.4-0.6c-83.6-35.4-142.4-75.6-146.6-78.5l-2.5-1.7c-4.4 4.3-9.4 7.7-13.5 10.5-7.9 5.4-18.7 11.9-31.2 18.9-30.2 16.9-67.4 35-104.7 50.9-82.4 36.9-166.7 38.3-176.1 38.3l-5.8-0.1z m240.6 439.3c-5.2 0-10.4-0.8-15.6-2.3-13.8-4.1-25.2-13.4-32-26.1-5.8-10.7-7.8-23.3-5.6-35.3l13.2-72.4-53.2-50.9c-21.5-20.6-22.3-54.8-1.8-76.3 8.4-8.8 19.7-14.6 31.8-16.2l73-9.8 31.9-66.4c12.9-26.8 45.2-38.2 72.1-25.3 11 5.3 20 14.3 25.3 25.3l31.9 66.4 73 9.8c14.3 1.9 27 9.3 35.7 20.8s12.5 25.7 10.6 40c-1.6 12.1-7.4 23.4-16.2 31.8l-53.2 50.9 13.2 72.4c5.3 29.3-14.2 57.5-43.5 62.8-12 2.2-24.5 0.2-35.3-5.6l-64.9-35-64.8 34.9c-8 4.3-16.7 6.5-25.6 6.5zM512 564.8l71.4 38.5-14.5-79.8 58.7-56.1-80.4-10.9-35.2-73.1-35.2 73.1-80.4 10.9 58.7 56.1-14.5 79.8 71.4-38.5z"-->
+<!--                                  data-darkreader-inline-fill="" fill="#333333" p-id="1172"-->
+<!--                                  style="&#45;&#45;darkreader-inline-fill:#262a2b;"></path>-->
+<!--                        </svg>-->
+                        双重预防机制信息系统
+                    </div>
+                    <div><p></p></div>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown" style="border-top-left-radius:10px;
+border-top-right-radius:10px">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink1" role="button">
+                            <svg class="icon" height="16" p-id="948" t="1642054701767"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M526.7456 496.1792a32.2048 32.2048 0 0 0-35.5328 42.8032l63.7952 172.9536-97.28 101.888-97.5872-101.888 63.7952-172.9536a32.2048 32.2048 0 0 0-35.5328-42.8032 417.3312 417.3312 0 0 0-348.16 411.8016 31.7952 31.7952 0 0 0 32.1024 32.1024h602.5216a31.744 31.744 0 0 0 27.8528-16.6912 32.2048 32.2048 0 0 0-0.4096-31.6928l-62.976-106.1376a53.8112 53.8112 0 0 1 0-54.3744l70.656-119.8592a31.8464 31.8464 0 0 0-9.0112-42.3936 418.0992 418.0992 0 0 0-174.2336-72.7552z"
+                                      fill="#ffffff" p-id="949"></path>
+                                <path d="M466.3808 265.8304m-181.9648 0a181.9648 181.9648 0 1 0 363.9296 0 181.9648 181.9648 0 1 0-363.9296 0Z"
+                                      fill="#ffffff" p-id="950"></path>
+                                <path d="M793.6 668.2624h157.952a32.1024 32.1024 0 0 0 0-64.2048H793.6a32.1024 32.1024 0 1 0 0 64.2048zM951.4496 718.7456h-79.2064a32.1536 32.1536 0 0 0 0 64.256h79.2064a32.1536 32.1536 0 0 0 0-64.256zM951.4496 833.0752H793.6a32.1024 32.1024 0 1 0 0 64.2048h157.952a32.1024 32.1024 0 1 0 0-64.2048z"
+                                      fill="#ffffff" p-id="951"></path>
+                            </svg>
+                            用户管理
+                        </p>
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">信息录入</a></li>
+                            <li><a class="dropdown-item" href="#">信息输出</a></li>
+                            <li><a class="dropdown-item" href="#">员工信息查询</a></li>
+                            <li><a class="dropdown-item" href="#">密码修改</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink2" role="button">
+                            <svg class="icon" height="16" p-id="1125" t="1642054998935"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M847.5136 85.4016H176.4864A131.7376 131.7376 0 0 0 44.6464 217.1904V696.32a131.7888 131.7888 0 0 0 131.84 131.84H378.88l-10.5472 14.3872a61.44 61.44 0 0 0-11.9808 35.84 59.9552 59.9552 0 0 0 59.9552 59.904h191.6928a61.1328 61.1328 0 0 0 35.84-11.9808 60.2112 60.2112 0 0 0 11.9808-83.8656l-10.7008-14.08h202.24A131.7888 131.7888 0 0 0 979.3536 696.32V217.1904a131.7376 131.7376 0 0 0-131.84-131.7888zM763.648 504.832V624.64a35.84 35.84 0 0 1-71.68 0V504.832a35.84 35.84 0 1 1 71.68 0zM476.16 624.64V289.1264a35.84 35.84 0 0 1 71.68 0V624.64a35.84 35.84 0 0 1-71.68 0zM332.2368 384.9728V624.64a35.84 35.84 0 0 1-71.68 0V384.9728a35.84 35.84 0 0 1 71.68 0z"
+                                      fill="#ffffff" p-id="1126"></path>
+                            </svg>
+                            风险分级管理
+                        </p>
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">制度与规则</a></li>
+                            <li><a class="dropdown-item" href="#">评价方法选择</a></li>
+                            <li><a class="dropdown-item" href="#">风险管控清单</a></li>
+                            <li><a class="dropdown-item" href="#">风险统计查询</a></li>
+                            <li><a class="dropdown-item" href="#">风险判定原则</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink3" role="button">
+                            <svg class="icon" height="16" p-id="1511" t="1642055631510"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M876.544 276.48l-189.44-210.5344a37.12 37.12 0 0 0-27.6992-12.3904H217.1392A79.3088 79.3088 0 0 0 138.24 132.608v758.784a79.3088 79.3088 0 0 0 79.104 79.104h590.0288A78.7456 78.7456 0 0 0 885.76 890.88V301.1584a35.84 35.84 0 0 0-9.216-24.6784z m-327.68 291.1744a37.0688 37.0688 0 1 1-74.1376 0V320.4608a37.3248 37.3248 0 0 1 37.2736-37.0688h0.512a36.864 36.864 0 0 1 36.5568 37.0688z m-36.864 142.7968h0.512a48.64 48.64 0 0 1 48.4352 48.9472 48.6912 48.6912 0 1 1-97.28 0 48.64 48.64 0 0 1 48.3328-48.9472z"
+                                      fill="#ffffff" p-id="1512"></path>
+                            </svg>
+                            隐患排查治理
+                        </p>
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">隐患排查清单</a></li>
+                            <li><a class="dropdown-item" href="#">隐患信息录入</a></li>
+                            <li><a class="dropdown-item" href="#">整改通知下达</a></li>
+                            <li><a class="dropdown-item" href="#">隐患验收销号</a></li>
+                            <li><a class="dropdown-item" href="#">隐患排查类型</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink4" role="button">
+                            <svg class="icon" height="16" p-id="1304" t="1642055385429"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M883.6608 250.112l-330.4448-191.0272a83.6608 83.6608 0 0 0-82.432 0L140.3392 250.112a81.6128 81.6128 0 0 0-40.96 71.0656v381.6448a81.92 81.92 0 0 0 40.96 71.0656L471.04 964.4544a83.3024 83.3024 0 0 0 40.96 11.3152 80.3328 80.3328 0 0 0 40.96-11.3152l330.4448-190.5664a82.5856 82.5856 0 0 0 41.216-71.0656V321.1776a82.5856 82.5856 0 0 0-40.96-71.0656zM504.7808 117.76a19.456 19.456 0 0 1 7.2192-1.792 20.0704 20.0704 0 0 1 6.8096 1.792l303.2576 175.2064-208.2304 120.576a137.216 137.216 0 0 0-203.6736 1.1776L201.472 293.12zM174.08 715.008a13.824 13.824 0 0 1-6.7584-12.1856V352l210.688 121.7536A132.0448 132.0448 0 0 0 373.76 506.88v0.4608a138.24 138.24 0 0 0 103.68 133.5296v249.4464z m682.1888-12.1856a14.2336 14.2336 0 0 1-7.2192 12.1856L545.4848 890.88v-249.6512A138.24 138.24 0 0 0 650.5472 506.88a135.7312 135.7312 0 0 0-4.096-33.4848l209.92-121.2928z"
+                                      fill="#ffffff" p-id="1305"></path>
+                            </svg>
+                            重大风险隐患备案
+                        </p>
+
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">重大危险源管理</a></li>
+                            <li><a class="dropdown-item" href="#">重大危险源判定原则</a></li>
+                            <li><a class="dropdown-item" href="#">重大危险源台账</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink5" role="button">
+                            <svg class="icon" height="16" p-id="1171" t="1642130651378"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M641 919.1L904.4 190c6-17.8 1.7-36.9-11.1-49.7-12.8-12.8-31.8-17.1-50-11L108.2 394c-14.4 4.9-25.1 16.7-28.5 31.5-3.5 15.7 1.5 32.6 13.2 44.3 3.3 3.3 7 6.1 11.1 8.3l354.7 106 96.7 334.5 1.8 4.3c10.4 18.6 32.6 28.7 52.7 24.1 14.6-3.3 26.4-13.9 31.1-27.9z"
+                                      fill="#ffffff" p-id="1172"></path>
+                            </svg>
+                            企业人员培训
+                        </p>
+
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">企业培训计划</a></li>
+                            <li><a class="dropdown-item" href="#">企业培训人员</a></li>
+                            <li><a class="dropdown-item" href="#">知识库</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink6" role="button">
+                            <svg class="icon" height="16" p-id="1414" t="1642130739357"
+                                 version="1.1" viewBox="0 0 1024 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M418.1 368c30.6-30.5 33.4-77.8 5.6-111.2l-86.1-108.4c-27.8-36.1-80.6-41.7-116.7-13.9-2.8 2.8-1.4 1.5-5.5 5.6l-75 75C68 287.4 170.8 481.9 357 668.1c186.1 186.2 377.7 286.2 450 216.8l75-75c33.4-33.4 33.4-86.2 0-116.7l-5.5-5.6-108.4-86.2c-33.3-27.8-80.5-25-111.1 5.6l-47.2 47.3c-50-30.6-94.5-63.9-133.4-102.8-38.9-39-72.2-83.5-102.8-133.5l44.5-50z"
+                                      fill="#ffffff" p-id="1415"></path>
+                                <path d="M744.6 941c-34.4 0-78.5-10.3-135-38.2-84.1-41.5-182.4-116.4-276.7-210.7C238.2 597.4 163 498.6 121.2 414c-62.2-126.1-37.1-190.8-5-222.8l75.2-75.2c2.4-2.3 2.6-2.6 3.1-3.1 0.4-0.4 1-1 2-2.1l1.6-1.7 1.9-1.4c24.6-18.9 55.2-27.4 86.1-23.8 31.4 3.6 59.1 19.1 78.1 43.7L450 235.4c18.7 22.6 28.2 51 26.7 79.9-1.5 28.4-13.5 55.4-33.8 76L416 421.5c26.8 41.2 54.6 76 84.4 105.9 29.6 29.6 64 57.1 104.5 83.6l28-28c20.8-20.8 48.1-33.1 76.8-34.6 28.9-1.5 57.2 8 79.8 26.7l109.7 87.2 6.4 6.5c22.1 20.6 34.7 48.7 35.4 79.2 0.7 31.7-12 63.1-34.9 86l-75.5 75.5c-17.6 16.7-44.7 31.5-86 31.5zM239.2 164.3l-74.9 74.9c-22.8 22.8-16.2 75.5 17.9 144.7C220.8 462 291.4 554.4 381 644.1c89.2 89.2 181 159.5 258.7 197.8 36.4 18 69.4 28.6 95.4 30.7 21.6 1.8 37.8-2.3 48.1-12l74.8-74.8c10-10 15.3-22.9 15-36.4-0.3-12.1-5.2-23.2-14-31.2l-1.2-1.1-4.1-4.1-107.1-85.1-0.3-0.3c-19.5-16.3-47-14.8-65.3 3.5l-66.1 66.2-22.9-14c-55.2-33.7-100.9-69-139.7-107.8-38.7-38.8-74-84.5-107.7-139.7l-13.1-21.5 61.9-69.6 0.7-0.7c18.3-18.3 19.8-45.8 3.5-65.4l-0.6-0.6-86.5-108.8c-15.5-20.1-45.9-24-67.3-8.9l-4 4z"
+                                      fill="#ffffff" p-id="1416"></path>
+                            </svg>
+                            生产事故直报
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bg-primary text-white p-2 text-center dropdown" style="border-bottom-left-radius:10px;
+border-bottom-right-radius:10px">
+                        <p aria-expanded="false" class=" dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="dropdownMenuLink7" role="button">
+                            <svg class="icon" height="16" p-id="2493" t="1642130840809"
+                                 version="1.1" viewBox="0 0 1399 1024" width="16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1189.542786 858.07708l-31.450341 0L1158.092445 400.980969c0-27.679906-22.433002-50.119124-50.122232-50.119124l-224.507193 0L883.463019 50.122232c0-27.679906-22.433002-50.122232-50.122232-50.122232L337.12913 0c-27.673689 0-50.119124 22.442327-50.119124 50.122232l0 807.954847-11.364148 0c-27.679906 0-50.122232 22.433002-50.122232 50.109799l0 65.688877c0 27.676798 22.442327 50.119124 50.122232 50.119124l913.896928 0c27.683015 0 50.116015-22.442327 50.116015-50.119124l0-65.688877C1239.658802 880.510081 1217.228909 858.07708 1189.542786 858.07708L1189.542786 858.07708zM739.785502 674.979398c0 27.689231-22.445435 50.122232-50.122232 50.122232l-208.84419 0c-27.683015 0-50.122232-22.433002-50.122232-50.122232l0-15.035116c0-27.679906 22.439219-50.116015 50.122232-50.116015l208.84419 0c27.676798 0 50.122232 22.43611 50.122232 50.116015L739.785502 674.979398 739.785502 674.979398zM739.785502 456.116978c0 27.679906-22.445435 50.122232-50.122232 50.122232l-208.84419 0c-27.683015 0-50.122232-22.442327-50.122232-50.122232l0-15.035116c0-27.679906 22.439219-50.122232 50.122232-50.122232l208.84419 0c27.676798 0 50.122232 22.442327 50.122232 50.122232L739.785502 456.116978 739.785502 456.116978zM739.785502 220.537823c0 27.683015-22.445435 50.122232-50.122232 50.122232l-208.84419 0c-27.683015 0-50.122232-22.439219-50.122232-50.122232l0-15.028899c0-27.689231 22.439219-50.125341 50.122232-50.125341l208.84419 0c27.676798 0 50.122232 22.439219 50.122232 50.125341L739.785502 220.537823 739.785502 220.537823zM1059.517166 764.372594l-133.659287 0c-23.063998 0-41.766973-18.702975-41.766973-41.77319 0-23.06089 18.702975-41.766973 41.766973-41.766973l133.659287 0c23.070215 0 41.770081 18.706083 41.770081 41.766973C1101.290357 745.66962 1082.587381 764.372594 1059.517166 764.372594L1059.517166 764.372594zM1059.517166 595.619974l-133.659287 0c-23.063998 0-41.766973-18.699867-41.766973-41.760756 0-23.07954 18.702975-41.776298 41.766973-41.776298l133.659287 0c23.070215 0 41.770081 18.699867 41.770081 41.776298C1101.290357 576.920107 1082.587381 595.619974 1059.517166 595.619974L1059.517166 595.619974zM1059.517166 595.619974"
+                                      fill="#ffffff" p-id="2494"></path>
+                            </svg>
+                            企业信息
+                        </p>
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">设施设备库</a></li>
+                            <li><a class="dropdown-item" href="#">作业活动库</a></li>
+                            <li><a class="dropdown-item" href="#">厂区图管理</a></li>
+                            <li><a class="dropdown-item" href="#">企业基本信息</a></li>
+                            <li><a class="dropdown-item" href="#">企业人员</a></li>
+                            <li><a class="dropdown-item" href="#">通知公告</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--    内容-->
+    <div class="col-10">
+        <div class="container">
+            <div class="containers">    <!--[0]-->
+                <div><p></p></div>
+                <div class="row grayBg p-2"><span class="small align-middle">用户管理 / 信息录入</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td><p class="h4">信息录入</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <!--                                姓名-->
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">姓名：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword6"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                性别：-->
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><label class="col-form-label">性别：</label></div>
+                                    <div class="col-auto form-check form-check-inline">
+                                        <input class="form-check-input" id="inlineCheckbox1" type="checkbox"
+                                               value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">男</label>
+                                    </div>
+                                    <div class="col-auto form-check form-check-inline">
+                                        <input class="form-check-input" id="inlineCheckbox2" type="checkbox"
+                                               value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">女</label>
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">年龄：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword7"
+                                               type="number">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">岗位：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword8"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">职称：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword9"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">家庭住址：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword10"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6">电话：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="inputPassword11"
+                                               type="text">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            -->
+            <div class="containers" id="隐患信息录入">    <!-- [1]-->
+                <div class="row grayBg p-2"><span class="small align-middle">隐患排查治理 / 隐患信息录入</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>
+                                <p class="h4">隐患信息录入</p>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6"><sup
+                                                style="color: red">* </sup>隐患名称：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="yhmc"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6"><sup
+                                                style="color: red">* </sup>隐患区域：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="yhqy"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6"><sup
+                                                style="color: red">* </sup>隐患级别：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="yhjb"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <label class="form-label" for="yhms"><sup style="color: red">* </sup>隐患描述：</label>
+                                    <textarea class="form-control" id="yhms" rows="3"></textarea>
+                                </div>
+                                <div><p></p></div>
+                            </td>
+                        </tr>
+                        <!--                                -->
+                        <tr>
+                            <td>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6"><sup
+                                                style="color: red">* </sup>登记人：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="djr"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                                -->
+                                <div><p></p></div>
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputPassword6"><sup
+                                                style="color: red">* </sup>登记时间：</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-describedby="passwordHelpInline" class="form-control"
+                                               id="djsj"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div><p></p></div>
+                                <div>
+                                    <button class="btn btn-primary"> &nbsp;提交&nbsp; </button>&nbsp;
+                                    <button class="btn btn-outline-secondary"> &nbsp;取消&nbsp; </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="containers" id="评价方法选择">
+                <div class="row grayBg p-2"><span class="small align-middle">风险分级管控 / 评价方法选择</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td><p class="h4">评价方法选择</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table" id="评价方法选择Index">
+                                    <thead>
+                                    <tr>
+                                        <th>风险点类型</th>
+                                        <th>辨识评价方法</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>设备设施</td>
+                                        <td>SCL + LEC</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" onclick="showContent()">点击选择评价表
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>作业活动</td>
+                                        <td>MIX + MES</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" onclick="showContent()">点击选择评价表
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table-striped table" id="评价方法选择Content">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">序号</th>
+                                        <th scope="col">危险源辨识方法</th>
+                                        <th scope="col">风险评价方法</th>
+                                        <th scope="col">选择</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>SCL</td>
+                                        <td>LEC</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>SCL</td>
+                                        <td>LS</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>JHA</td>
+                                        <td>LEC</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>JHA</td>
+                                        <td>LS</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>PHA</td>
+                                        <td>LEC</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>PHA</td>
+                                        <td>LS</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>SCL+JHA+PHA</td>
+                                        <td>三维风险模型</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">+ 选择</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <script type="text/javascript">
+                                    function hideContent() {
+                                        let content = document.getElementById("评价方法选择Content");
+                                        content.style.visibility = "hidden";
+                                    }
+
+                                    hideContent();
+
+                                    function showContent() {
+                                        let index = document.getElementById("评价方法选择Index");
+                                        index.style.display = "none";
+                                        let content = document.getElementById("评价方法选择Content");
+                                        content.style.visibility = "visible";
+                                    }
+                                </script>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="containers" id="风险管控清单">
+                <div class="row grayBg p-2"><span class="small align-middle">风险分级管控 / 风险管控清单</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail4"
+                                              placeholder="搜索" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>
+                                <p class="h4">风险管控清单</p>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th rowspan="2">序号</th>
+                                        <th rowspan="2">作业步骤</th>
+                                        <th rowspan="2">危险源或潜在事件</th>
+                                        <th rowspan="2">主要后果</th>
+                                        <th colspan="5">管控措施</th>
+                                        <th rowspan="2">L</th>
+                                        <TH rowspan="2">S</TH>
+                                        <th rowspan="2">R</th>
+                                        <th rowspan="2">评价级别</th>
+                                        <th rowspan="2">管控级别</th>
+                                        <th rowspan="2">建议新增<br/>（改进）措施</th>
+                                        <th rowspan="2">备注</th>
+                                    </tr>
+                                    <tr>
+                                        <th>工程控制</th>
+                                        <th>管理措施</th>
+                                        <th>培训教育</th>
+                                        <th>个体防护</th>
+                                        <th>应急处置</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--    template        -->
+<!--            <div class="containers" id="template">-->
+<!--                <div class="row grayBg p-2"><span class="small align-middle">路径</span></div>-->
+<!--                <div><p></p></div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control" id=""-->
+<!--                                              placeholder="搜索" type="email"></div>-->
+<!--                    <div class="col-8">-->
+<!--                        <button class="btn btn-primary" type="button">-->
+<!--                            查找-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div><p></p></div>-->
+<!--                <div class="row">-->
+<!--                    <table>-->
+<!--                        <thead class="grayBg">-->
+<!--                        <tr>-->
+<!--                            <td>-->
+<!--                                head-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>content</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!--            -->
+            <div class="containers" id="隐患排查清单">
+                <div class="row grayBg p-2"><span class="small align-middle">隐患排查治理 / 隐患排查清单</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail6"
+                                              placeholder="搜索" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>
+                                <p class="h4">隐患排查清单</p>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <td colspan="4">排查内容与排查标准</td>
+                                        <td colspan="4">日常检查</td>
+                                        <td colspan="2">专业检查</td>
+                                        <td>综合检查</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">作业步骤<br/></td>
+                                        <th rowspan="2">危险源或潜在事件<br/>(标准)</th>
+                                        <th rowspan="2">管控措施</th>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                        <td>名称</td>
+                                    </tr>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>名称</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每小时/岗位级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每交接班/班组级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每班组/班组级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每日2次/车间级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每周1次/车间级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每月1次/车间级)</th>
+                                        <th>排查周期/<br/>组织级别<br/>(每年1次/车间级)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--                                    -->
+                                    <tr>
+                                        <td rowspan="5">1</td>
+                                        <td rowspan="5">1</td>
+                                        <td rowspan="5">1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <!--                                    -->
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="containers" id="重大危险源管理">
+                <div class="row grayBg p-2"><span class="small align-middle">重大风险隐患备案 / 重大危险源管理</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail7"
+                                              placeholder="搜索" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td><p class="h4">重大危险源管理</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            序号
+                                        </th>
+                                        <th>重大危险名称</th>
+                                        <th>级别</th>
+                                        <th>详细地址</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!---->
+            <div class="containers" id="重大风险源台账">
+                <div class="row grayBg p-2"><span class="small align-middle">重大风险源隐患备案 / 重大风险源台账</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control"
+                                              placeholder="搜索" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td><p class="h4">重大危险源台账</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            序号
+                                        </th>
+                                        <th>重大危险名称</th>
+                                        <th>级别</th>
+                                        <th>详细地址</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            -->
+            <div class="containers" id="企业培训人员">
+                <div class="row grayBg p-2"><span class="small align-middle">企业人员培训 / 企业培训人员</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control"
+                                                              placeholder="搜索" type="email"></div>
+                                    <div class="col-8">
+                                        <button class="btn btn-primary" type="button">
+                                            查找
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">全部</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">在用</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">注销</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                                        <th>姓名</th>
+                                        <th>证件类型</th>
+                                        <th>证件号</th>
+                                        <th>部门名称</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary" type="button">修改</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!--            -->
+            <div class="containers" id="企业培训课程">
+                <div class="row grayBg p-2"><span class="small align-middle">企业人员培训 / 企业培训课程</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control"
+                                              placeholder="教材名称" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div>
+                    <button class="btn btn-primary btn-sm" type="button">新增</button>
+                    <button class="btn btn-danger btn-sm" type="button">删除</button>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                            <th>名称</th>
+                            <th>课程类型</th>
+                            <th>标签</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" type="button">修改</button>
+                                <button class="btn btn-secondary btn-sm" type="button">预览</button>
+                                <button class="btn btn-secondary btn-sm" type="button">导出</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            -->
+            <div class="containers" id="企业培训试卷">
+                <div class="row grayBg p-2"><span class="small align-middle">企业人员培训 / 企业培训试题</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="inputPassword2"></label>
+                        <input class="form-control" id="inputPassword2" placeholder="题干" type="password">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="inputPassword3"></label>
+                        <input class="form-control" id="inputPassword3" placeholder="培训类别" type="password">
+                    </div>
+                    <div class="dropdown col-auto">
+                        <button aria-expanded="false" class="btn btn-light text-muted dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#" id="dropdownMenuLink" role="button">
+                            选择试题类型
+                        </button>
+                        <ul aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">类型一</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown col-auto">
+                        <button aria-expanded="false" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                href="#"
+                                id="dropdownMenuLink10" role="button">
+                            选择难易程度
+                        </button>
+                        <ul aria-labelledby="dropdownMenuLink10" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">类型一</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary mb-3" type="submit">查询</button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div>
+                    <button class="btn btn-primary btn-sm" type="button">新增</button>
+                    <button class="btn btn-danger btn-sm" type="button">删除</button>
+                    <button class="btn btn-success btn-sm" type="button">试题导入</button>
+                    <button class="btn btn-success btn-sm" type="button">下载试题模板</button>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                            <th>题干</th>
+                            <th>类型</th>
+                            <th>答案</th>
+                            <th>难易程度</th>
+                            <th>岗位分类</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" value="option1"></td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                            <td>正常</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" type="button">修改</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- -->
+            <div class="containers" id="双重预防体系">
+                <div class="row grayBg p-2"><span class="small align-middle">企业人员培训 / 双重预防体系</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control"
+                                              placeholder="搜索" type="email"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>
+                                <p class="h4">双重预防体系</p>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>文件名</th>
+                                        <th>发布单位</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span>name</span><span> </span><span><a
+                                                href="#">下载</a></span></td>
+                                        <td>发布单位</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" type="button">编辑</button>
+                                            <button class="btn btn-danger btn-sm" type="button">删除</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            -->
+            <div class="containers" id="企业人员">
+                <div class="row grayBg p-2"><span class="small align-middle">企业信息 / 企业人员</span></div>
+                <div><p></p></div>
+                <div class="row">
+                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control"
+                                              placeholder="请输入员工姓名查询" type="text"></div>
+                    <div class="col-8">
+                        <button class="btn btn-primary" type="button">
+                            查找
+                        </button>
+                    </div>
+                </div>
+                <div><p></p></div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>
+                                <p class="h4">企业人员</p>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>用户名称</th>
+                                        <th>登录账号</th>
+                                        <th>所属部门</th>
+                                        <th>性别</th>
+                                        <th>职位</th>
+                                        <th>联系方式</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>王俊</td>
+                                        <td>12304858582911</td>
+                                        <td>所属部门</td>
+                                        <td>女</td>
+                                        <td>职位</td>
+                                        <td>12345678909</td>
+                                        <td><a href="#">角色授权</a></td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            -->
+<!--            <div class="containers" id="hah">-->
+<!--                <div class="row grayBg p-2"><span class="small align-middle">路径</span></div>-->
+<!--                <div><p></p></div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-4"><input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail5"-->
+<!--                                              placeholder="搜索" type="email"></div>-->
+<!--                    <div class="col-8">-->
+<!--                        <button class="btn btn-primary" type="button">-->
+<!--                            查找-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div><p></p></div>-->
+<!--                <div class="row">-->
+<!--                    <table>-->
+<!--                        <thead class="grayBg">-->
+<!--                        <tr>-->
+<!--                            <td>-->
+<!--                                head-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>content</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    function closeAllContainer() {
+        let containers = document.getElementsByClassName("containers");
+        for (let i = 0; i < containers.length; i++) {
+            containers[i].style.display = "none";
+        }
+    }
+
+    // closeAllContainer();
+
+    function openAContainer(pageNum) {
+        // closeAllContainer();
+        let containers = document.getElementsByClassName("containers");
+        containers[pageNum].style.display = "inline";
+    }
+
+    openAContainer(0);
+</script>
+</html>
